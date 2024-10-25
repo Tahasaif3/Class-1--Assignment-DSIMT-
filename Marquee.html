@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Headlines</title>
+    <style>
+         header {
+            background-color: #333;
+            padding: 15px 0;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #00aaff;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            ul li {
+                margin: 10px 0;
+            }
+        }
+
+        .news-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #00aaff;
+        }
+
+        marquee {
+            font-size: 18px;
+            padding: 10px;
+            background-color: white;
+            margin-bottom: 20px;
+            border: 2px solid #4098c4;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Taha Saif
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Fieldset.html">Fieldset</a></li>
+                <li><a href="iframe.html">Iframe</a></li>
+                <li><a href="Marquee.html">Marquee</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="news-section">
+        <h1>Latest News Headlines</h1>
+
+     
+        <marquee behavior="scroll" direction="left">Breaking News: New Web Technologies on the Rise!</marquee>
+
+ 
+        <marquee behavior="scroll" direction="right">Tech News: AI is transforming the digital world!</marquee>
+
+        <marquee behavior="scroll" direction="down" height="50">Health Update: Stay hydrated during summer heat!</marquee>
+
+        <marquee behavior="scroll" direction="up" height="50">World News: New space exploration mission launched!</marquee>
+    </div>
+
+</body>
+</html>

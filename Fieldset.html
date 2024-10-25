@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 0;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #00aaff;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            ul li {
+                margin: 10px 0;
+            }
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        fieldset {
+            border: 2px solid #00aaff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00aaff;
+            padding: 0 10px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #008ecc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Taha Saif
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Fieldset.html">Fieldset</a></li>
+                <li><a href="iframe.html">Iframe</a></li>
+                <li><a href="Marquee.html">Marquee</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h1 style="text-align: center; color:#008ecc; font-weight: bold;">Contact me Form</h1>
+    <div class="form-container">
+        <form action="">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </fieldset>
+
+            <fieldset>
+                <legend>Address Information</legend>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city">
+
+                <label for="Province">Province:</label>
+                <select id="Province" name="Province">
+                    <option value="">Select your state</option>
+                    <option value="Sindh">Sindh</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                    <option value="Balochishtan">Balochistan</option>
+                </select>
+            </fieldset>
+
+           
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
